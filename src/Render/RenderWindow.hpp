@@ -5,8 +5,8 @@ using namespace std;
 
 class Window{
     string winName = "Game";
-    const int SCREENWIDTH = 1600;
-    const int SCREENHEIGHT = 900;
+    const int SCREENWIDTH = 640;
+    const int SCREENHEIGHT = 480;
     
     public:
         void makeWindow();

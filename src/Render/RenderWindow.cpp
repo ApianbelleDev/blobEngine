@@ -1,6 +1,8 @@
 #include "RenderWindow.hpp"
 
+
 void Window::makeWindow(){
+    std::string currentState = "Gameplay";
     sf::RenderWindow window(sf::VideoMode(SCREENWIDTH, SCREENHEIGHT), winName);
 
     while (window.isOpen())
@@ -12,7 +14,14 @@ void Window::makeWindow(){
                 window.close();
         }
 
-        window.clear();
+        window.clear(sf::Color(0,181,226));
+        //draw game states here
+        if(currentState == "Menu"){
+            //draw menu here
+        }
+        else if(currentState == "Gameplay"){
+            //draw gameplay here
+        }
         window.display();
     }
 }
